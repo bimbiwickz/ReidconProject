@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <img id="photo" src="D:\Reidcon\Task\images\logo.png" alt="logo">
+    <p id="first"><a href="D:\Reidcon\first.html" id="href">HOME</a> &emsp;
+        <a href="D:\Reidcon\second.html" id="href"> WHY HTML?</a> &emsp;</p>
+    <img id="app" src="D:\Reidcon\Task\images\app.png" alt="app">
+    <div id="Container_1"> 
+    <p id="why_html">Why HTML?</p>
+    <p class="paragraph_p1"><b>HTML</b> (Following Paragraph is Left Aligned)</p>
+    <p>HTML is a responsible of giving a semantic meaning for your content
+                        For example:</p>
+    <ol><li>HTML is a &lth5&gt <b>title</b> &lt/h5&gt </li>
+                        <li>Followed by a &ltp&gt paragraph &lt/p&gt </li>
+                        <li>Then there's a footer[etc].</li></ol>
+    <p>Web browsers read it to display your content according to their importance (a 
+                        title is bigger than a text, a &ltstrong&gt <b>"strong"</b> &lt/strong&gt text is more
+                        important than a single text, etc). &lttt&gt Crawlers &lt/tt&gt (like robots) use it to
+                        identify what content is relevant to their activity (i.e. google needs your page 
+                        title to show it on his page).</p><br>
+    <p class="paragraph_p1"><b>CSS</b> (Following Paragraph is Justified)</p>
+    <p id="paragraph_p2">CSS gives a style to your application. It's fundamentally destined to the user. It
+                        allows to say <span id="red_o">"this text is red"</span>, <span id="background_block">"this block is 200px wide" </span>, etc. It's "basically"
+                        not used by crawlers but it has some importance(some robot avoid to render a
+                        text if it's hidden for example)</p><br>
+    <p class="paragraph_p1"><b>JavaScript</b> (Following Paragraph is Right Aligned)</p>
+    <p id="paragraph_p3">JavaScript, which is the only programming language of<br>
+                        these 3, allows you to perform actions in real time (like<br>
+                        showing a dialog when the user click a button).</p>
+    </div>                   
+    <p id="s_form">Sample Form</p>
+    <div id="container_2">
+        <form> 
+            <span id="nama">Name:</span> <input type="text" id="names" name="fullname" placeholder="Name"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="emailaddress" placeholder="Email Address"><br>
+            <label for="gender">Gender:
+            <input type="radio" id="checkbox_1" name="rb" onclick="myFunction()">
+            Male
+            <input type="radio" id="checkbox_2" name="rb" onclick="myFunction()">
+            Female<br>
+          </label>
+            <label for="Academic_year">Academic Year:</label>
+            <select name="AY" id="A_year">
+              <option value="Select_F">Select from text</option>
+              <option value="A_Y1">Academic Year 1</option>
+              <option value="A_Y2">Academic Year 2</option>
+              <option value="A_Y3">Academic Year 3</option>
+              <option value="A_Y4">Academic Year 4</option>
+            </select><br>
+            <label for="Familiar">Familiar in:
+                <input type="checkbox" id="checkbox_2" name="cb" onclick="myFunction()">
+                HTML
+                <input type="checkbox" id="checkbox_2" name="cb" onclick="myFunction()">
+                CSS
+                <input type="checkbox" id="checkbox_2" name="cb" onclick="myFunction()">
+                JS<br>
+            </label>
+            <label for="comment">Comment:
+                <textarea name="comment" cols="38" rows="10" id="commen" placeholder="Your Feedback"></textarea>
+            </label><br>
+            <input type="submit" id="submit">
+            <input type="reset" id="reset">
+        </form>
+    </div>
+
+</body>
+</html>
